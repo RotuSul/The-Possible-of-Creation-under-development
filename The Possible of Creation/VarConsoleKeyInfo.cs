@@ -6,8 +6,16 @@ using System.Threading.Tasks;
 
 namespace The_Possible_of_Creation
 {
-    class VarConsoleKeyInfo
+    public class VarConsoleKeyInfo
     {
-
+        public int Loop = 2;
+        public double Hardware = 6;
+        public double Dinero = 1200;
+        public double ColiTec = 5;
+        public double DispositivoComCell = 20;
+        public double PreçoHardware = 199;
+        public double PreçoColitec = 499;
+        public double Dispositivopreço = 799;
+        public double Pessoa;
     }
 }
