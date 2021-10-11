@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 using System.Drawing;
-using System.Windows.Forms;
 
 namespace The_Possible_of_Creation
 {
@@ -13,9 +12,9 @@ namespace The_Possible_of_Creation
     {
         public void Main()
         {
-            GraficPixel3D metod1 = new GraficPixel3D();
-            metod1.Grafic3D();
-        Finish:
+            int Loop2 = 3;
+            for(int O = 1; O < Loop2; O++)
+            {
                 ConsoleColor PenDay = ConsoleColor.Blue;
                 Console.BackgroundColor = PenDay;
                 Console.Write(PenDay);
@@ -33,7 +32,10 @@ namespace The_Possible_of_Creation
 
                 TimeSpan Day = new TimeSpan(0, 0, 0, 2);
                 Thread.Sleep(Day);
-                goto Finish;
+                O = O - 1;
+            }
+
+
 
             Console.ReadLine();
 
